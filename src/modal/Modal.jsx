@@ -4,6 +4,7 @@ import { IoIosCloseCircleOutline } from 'react-icons/io'
 
 import modalStyle from './Modal.module.css'
 
+// eslint-disable-next-line react/prop-types
 const Modal = ({ modalIsOpen, setIsOpen }) => {
     // const {data, setData} = useState({})
 
