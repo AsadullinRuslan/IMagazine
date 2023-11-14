@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js init
+  C:\Program Files\nodejs\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add react-icons
 
 PATH: 
   C:\Users\User\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\User\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\nodejs;C:\Program Files\Git\cmd;C:\Users\User\AppData\Local\Microsoft\WindowsApps;C:\Users\User\AppData\Roaming\npm;C:\Users\User\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
@@ -14,17 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: canceled
-      at Interface.<anonymous> (C:\Users\User\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:137150:13)
-      at Interface.emit (node:events:513:28)
-      at [_ttyWrite] [as _ttyWrite] (node:internal/readline/interface:1131:18)
-      at ReadStream.onkeypress (node:internal/readline/interface:270:20)
-      at ReadStream.emit (node:events:513:28)
-      at emitKeys (node:internal/readline/utils:357:14)
-      at emitKeys.next (<anonymous>)
-      at ReadStream.onData (node:internal/readline/emitKeypressEvents:64:36)
-      at ReadStream.emit (node:events:513:28)
-      at addChunk (node:internal/streams/readable:324:12)
+  Error: EPERM: operation not permitted, unlink 'C:\Projects\IMagazine\node_modules\@esbuild\win32-x64\esbuild.exe'
 
 npm manifest: 
   {
@@ -44,6 +34,7 @@ npm manifest:
       "axios": "^1.5.0",
       "react": "^18.2.0",
       "react-dom": "^18.2.0",
+      "react-hook-form": "^7.47.0",
       "react-modal": "^3.16.1",
       "react-redux": "^8.1.2",
       "react-router-dom": "^6.16.0",

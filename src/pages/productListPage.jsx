@@ -5,15 +5,15 @@ import ProductItem from "../components/product/ProductItem";
 import Title from "../components/title/Title";
 import { getProducts } from "../slice/productListSlice";
 import Loader from "../components/loader/Loader";
-import CategoryItem from "../components/category/CategoryItem";
+// import CategoryItem from "../components/category/CategoryItem";
 import Select from "react-select";
 import makeAnimated from "react-select/animated";
 
-const options = [
-    { value: "chocolate", label: "Chocolate" },
-    { value: "strawberry", label: "Strawberry" },
-    { value: "vanilla", label: "Vanilla" },
-];
+// const options = [
+//     { value: "chocolate", label: "Chocolate" },
+//     { value: "strawberry", label: "Strawberry" },
+//     { value: "vanilla", label: "Vanilla" },
+// ];
 
 const categoryList = [
     { id: 1, value: "electronics", label: "electronics" },
@@ -30,10 +30,10 @@ const ProductList = () => {
 
     useEffect(() => {
         dispatch(getProducts());
-    }, []);
+    });
 
     const editCategory = (category) => {
-        setCategory(category.value)
+        setCategory(category && category.value)
     };
 
     const animatedComponents = makeAnimated();
@@ -52,7 +52,7 @@ const ProductList = () => {
                     onChange={editCategory}
                     name="categories"
                     id="categories-select"
-                    closeMenuOnSelect={false}
+                    closeMenuOnSelect={true}
                     components={animatedComponents}
                     // isMulti
                     options={categoryList}

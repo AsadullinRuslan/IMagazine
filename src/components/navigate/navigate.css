@@ -67,13 +67,6 @@
     box-shadow: 1px 1px 6px #9e9e9e;
 }
 
-.caret {
-    translate: 0 25%;
-    border: 0.5em solid transparent;
-    border-top-color: #777;
-    border-bottom-color: #777;
-}
-
 .modal {
     position: fixed;
     display: flex;
@@ -83,8 +76,18 @@
     left: 50%;
     width: 36em;
     height: 20em;
-    background-color: gray;
-    translate: -20% -40%;
+    background-color: teal;
+    translate: -50% -50%;
     border-radius: 10px;
     z-index: 1000;
+}
+
+.background__modal {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(128, 128, 128, 0.5);
+    z-index: 999;
 }

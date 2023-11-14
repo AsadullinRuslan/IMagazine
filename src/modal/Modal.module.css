@@ -1,0 +1,24 @@
+.modalWindow {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.modalWindow input {
+    outline: none;
+    height: 2em;
+    border-radius: 4px;
+}
+
+.closeModalWindow {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.closeModalWindow:hover {
+    color: rgb(0 255 255);
+}
