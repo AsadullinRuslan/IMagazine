@@ -1,0 +1,24 @@
+.singleProductDescription {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.imageById {
+    width: 50%;
+    margin-right: 30px;
+}
+
+.description {
+    width: 45%;
+}
+
+.backBtn {
+    padding: 5px 15px;
+    margin-top: 30px;
+    color: teal;
+    font-style: 14px;
+    background: transparent;
+    border: 1px solid teal;
+    cursor: pointer;
+}

@@ -1,0 +1,31 @@
+.sidebar {
+    top: 0;
+    padding-top: 45px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 20%;
+    height: 100vh;
+    box-shadow: 1px 0px 20px #adadad;
+    z-index: 100;
+}
+
+a {
+    text-decoration: none;
+    color: #adadad;
+}
+
+a:hover {
+    color: aqua;
+}
+
+h4 {
+    display: flex;
+    margin: 10px;
+}
+
+.visitedItemImage {
+    max-width: 90px;
+}
