@@ -14,9 +14,9 @@ function App() {
             <Navigate />
             <Sidebar />
             <Routes>
-                <Route path="/" element={<ProductList />}></Route>
-                <Route path="products/:id" element={<ProductPage />}></Route>
-                <Route path="basket" element={<BasketPage />}></Route>
+                <Route path="/IMagazine/dist/" element={<ProductList />}></Route>
+                <Route path="/IMagazine/dist/products/:id" element={<ProductPage />}></Route>
+                <Route path="/IMagazine/dist/basket" element={<BasketPage />}></Route>
             </Routes>
         </>
     );
